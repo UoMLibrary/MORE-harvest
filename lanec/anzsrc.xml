@@ -1,0 +1,21 @@
+<article-categories xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group>
+  <subj-group subj-group-type="anzsrc-for">
+    <compound-subject>
+      <compound-subject-part content-type="code">51</compound-subject-part>
+      <compound-subject-part content-type="text">Physical sciences</compound-subject-part>
+    </compound-subject>
+    <subj-group>
+      <compound-subject>
+        <compound-subject-part content-type="code">5107</compound-subject-part>
+        <compound-subject-part content-type="text">Particle and high energy physics</compound-subject-part>
+      </compound-subject>
+      <subj-group>
+        <compound-subject>
+          <compound-subject-part content-type="code">510702</compound-subject-part>
+          <compound-subject-part content-type="text">Field theory and string theory</compound-subject-part>
+        </compound-subject>
+      </subj-group>
+    </subj-group>
+  </subj-group>
+</article-categories>

@@ -1,0 +1,314 @@
+Crystallography Reviews
+ISSN: 0889-311X (Print) 1476-3508 (Online) Journal homepage: www.tandfonline.com/journals/gcry20
+Perspectives on the 50th anniversary of
+synchrotron radiation protein crystallography
+John R. Helliwell
+To cite this article: John R. Helliwell (2025) Perspectives on the 50th anniversary of
+synchrotron radiation protein crystallography, Crystallography Reviews, 31:3-4, 201-206, DOI:
+10.1080/0889311X.2026.2615251
+To link to this article:  https://doi.org/10.1080/0889311X.2026.2615251
+© 2026 The Author(s). Published by Informa
+UK Limited, trading as Taylor & Francis
+Group.
+Published online: 28 Feb 2026.
+Submit your article to this journal 
+Article views: 203
+View related articles 
+View Crossmark data
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=gcry20
+
+CRYSTALLOGRAPHY REVIEWS
+2025, VOL. 31, NOS. 3–4, 201–206
+https://doi.org/10.1080/0889311X.2026.2615251
+REVIEW ARTICLE
+Perspectives on the 50th anniversary of synchrotron radiation
+protein crystallography
+John R. Helliwell
+Chemistry Department, University of Manchester, Manchester, UK
+ABSTRACT
+In 2026, it will be the 50th Anniversary of the Stanford Synchrotron
+Radiation Laboratory (SSRL) SR and protein crystallography initiative
+led by Keith Hodgson and published in 1976. This seminal research
+led to an explosion of experimental protein crystal structures these
+past 5 decades whereby 90% of protein crystal structures are deter-
+mined at synchrotron X-radiation facilities. It is the vast number
+of structures now totalling 240,000 in the Protein Data Bank that
+underpinned the AlphaFold prediction of protein folds.
+ARTICLE HISTORY
+Received 9 December 2025
+Accepted 30 December 2025
+KEYWORDS
+Synchrotron radiation;
+protein crystallography;
+multiple wavelength
+phasing; Protein Data Bank;
+protein fold prediction;
+future developments
+Introduction
+In 2026, it will be the 50th Anniversary of the Stanford Synchrotron Radiation Laboratory
+(SSRL) SR and protein crystallography initiative led by Keith Hodgson and published in
+1976 in PNAS [1]. Recognizing this the IUCr’s Journal of Synchrotron Radiation (JSR) pro-
+duced a special issue entitled ‘The 50th Anniversary of the Stanford SSRL SR and protein
+crystallography initiative led by Keith Hodgson’. The majority of the world’s SR and XFEL
+facilities submitted articles for this in JSR. This collection of articles is introduced by Helli-
+well and Szebenyi [2] here: https://journals.iucr.org/special_issues/2025/ssrlprotein/. This
+seminal research by Keith Hodgson led to an explosion of experimental protein crystal
+structures these past 5 decades whereby 90% of protein crystal structures are determined
+at synchrotron X-radiation facilities.
+The first reference of ref. [1] was to a paper from the DESY Synchrotron Laboratory in
+Hamburg, Germany [3] focussing on the broader range of the whole of biological diffrac-
+tion and the great potential of synchrotron radiation. Indeed, in parallel with the paper
+from SSRL [1] was the paper from DESY, Hamburg [4]. All three of these papers were
+important. These vital steps included the multiple wavelength phasing method with SR,
+which is fully tuneable, led by Keith Hodgson and documented in refs. [5–8]. Those papers
+cited the two-wavelength phasing for an iron containing protein with two laboratory X-ray
+sources, one with a Ni anode and one with a Co anode [9]. These stimulated my practi-
+cal activity in this field [10]. The much more versatile synchrotron radiation method was
+expanded in its applicability in a major way by the seleno-methionine protein produc-
+tion methodology initiated by Wayne Hendrickson [11] who also expanded the multiple
+CONTACT John R. Helliwell
+john.helliwell@manchester.ac.uk
+© 2026 The Author(s). Published by Informa UK Limited, trading as Taylor & Francis Group.
+ThisisanOpenAccessarticledistributedunderthetermsoftheCreativeCommonsAttributionLicense(http://creativecommons.org/licenses/
+by/4.0/), whichpermitsunrestricteduse, distribution, andreproductioninanymedium, providedtheoriginalworkisproperlycited. Theterms
+on which this article has been published allow the posting of the Accepted Manuscript in a repository by the author(s) or with their consent.
+
+202
+J. R. HELLIWELL
+wavelength phasing method, ‘MAD’ [12,13]. Helliwell, initially in Keele, then York and
+Manchester Universities, and as a beamline scientist at the UK’s SRS established protein
+crystallography beamlines (7.2, 9.6 and 9.5) between 1979 and 2008. These also made sus-
+tained and broad contributions to this vital protein crystal structure determining method.
+A key issue was considering how many X-ray wavelengths were necessary for a precise
+determination of the phases of the X-ray reflections. It had been established by Hoppe and
+Jakubowski [9] what was needed in principle and indeed in practice with their home lab-
+oratory X-ray sources applied in their actual case of erythrocruorin that two wavelengths
+were sufficient leading to a dispersive difference and one anomalous difference, three mea-
+surements in all. Helliwell’s laboratory explored the number of wavelengths in various
+combinations up to four and their dispersive and anomalous differences measurements
+needs in detail [14] using SRS 9.5.
+For new protein crystal structures, at SSRL Keith Hodgson led the research on the cop-
+per containing cucumber basic protein, which was amongst the first [15] and a critical
+demonstration of MAD. The French LURE synchrotron facility [16] also made important
+demonstration studies as did the NSLS and elsewhere [12,13]. Mukherjee, Helliwell and
+Main [17] combined direct methods with SR anomalous differences data measured at the
+SRS 7.2. This innovation allowed the positions of the anomalous scatterers in a protein
+to be done using the direct methods program MULTAN [18]. This was a critical step as
+the cases increased where larger numbers of anomalous scatterers were harnessed in the
+MAD phase determinations. For locating relatively large numbers of anomalous scatter-
+ers efficiently from MAD or SAD data SHELXD was developed [19]. SHELXD’s approach
+involved iterative dual-space direct methods, i.e. based on phase refinement in reciprocal
+space and peak picking in real space.
+The planning of the ESRF’s macromolecular crystallography in the mid-1980s and into
+the 1990s [20] created a great expansion of synchrotron radiation usage in protein crys-
+tallography. Greatly facilitating the detailing of these plans was the ‘New Rings Workshop’
+held at SSRL, co-organized by Keith Hodgson with Dr Herman Winick, a Stanford accel-
+erator machine physicist. Critical were the tests on protein microcrystals showing that
+a 20-micron dimension microcrystal could withstand the radiation and thermal blast of
+such ultra-intense X-ray beams [21]. One of the first MAD experiments done at ESRF was
+on BM14 [22]. The eventual extensive development of instrumentation and methods for
+multi-wavelength anomalous dispersion worldwide namely at the SRS, ESRF, CHESS and
+Elettra facilities was described in [23].
+Keith Hodgson’s experience in SR EXAFS on a wide range of bioinorganic chemistry
+samples enabled the synergy between tuneable X-ray synchrotron radiation for multiple
+wavelength phasing in crystallography and scanning of the X-ray wavelength in measuring
+EXAFS spectra put him in a pivotal position to develop both scientific fields. The Inter-
+national Union of Crystallography (IUCr) established a Commission on XAFS in 1996
+(http://ww1.iucr.org/iucr-top/cexec/rep96/cxafs.htm).
+Improved X-ray detectors over the commonly used photographic film in the 1970s for
+measuring small intensity signals was another critical component of the ultimate success
+of the MAD phasing method and macromolecular crystallography in general (see relevant
+sections in refs [24–26]). At SSRL led by Keith Hodgson their multi-wire proportional
+chamber (MWPC) was a critical step and was used in their determination of the crystal
+structure of the cucumber basic protein [15]. At LURE, Fourme and Kahn adapted George
+
+CRYSTALLOGRAPHY REVIEWS
+203
+Charpak’s CERN radial drift chamber MWPC for multiple wavelength phasing. SRS col-
+laborated with Enraf Nonius commercializing the Arndt (MRC Laboratory of Molecular
+Biology, Cambridge) TV intensifier detector, with Rigaku Corporation Japan with their
+image plage detector reader and the UK Rutherford Appleton Laboratory with a multi-
+wire proportional chamber. See chapter 5 of ref. [24]. These improved detectors each had
+their strengths and limitations and became superseded by the ideal properties pixel detec-
+tor developed at the Swiss PSI Laboratory and commercialized by their spin out company
+Dectris [27]. Software developed for multiple isomorphous replacement was harnessed for
+multiple wavelength phasing, such as in the MLPHARE program of CCP4 [28]. Eventually,
+as the diffraction intensity measurements became better quality (i.e. lower errors) due to
+the improved detectors, single wavelength phasing became routine where the ambiguity in
+each reflection phase from its one anomalous difference was resolved by solvent flattening,
+a procedure led by Wang [29].
+There were some false steps, and temporary challenges, in developing the MAD phas-
+ing method. These included: the need for at least four wavelengths for a least squares
+analysis of phases which were unnecessary (as shown by [14]); the proposal of Arndt
+to make a polychromatic profile, made feasible in experimental terms by SRS 7.2 [30]
+although that did become applied in inorganic small molecule crystallography as the
+renamed method of DAFS (diffraction anomalous fine structure) was called [31]. An
+important experimental approach initially, when the synchrotron source X-ray beam
+intensity could vary with time, was a well aligned protein crystal to ensure the anomalous
+differences were measured at the same time to improve their precision as much as possible
+[32,33].
+There are some key developments need mentioning to offer a more rounded narrative
+of the story. For instance, with the advent of third generation light sources as mentioned
+above specialized micro focusing diffractometers became available, with seminal work
+done at ESRF [34]. This allowed to routinely significantly reduce the sample size. Soft X-ray
+phasing became available, and it involved new beamline and software developments (see
+review [35]). Multibend achromat devices in the machine accelerators themselves have
+become available in the last 15 years promising brilliance never expected before [36]. Sev-
+eral Nobel prizes have been awarded in structural biology where synchrotron radiation
+protein crystallography played a key role.
+To sum up the present
+AlphaFold [37] is now dominating macromolecular crystal structure determination as
+the start for molecular replacement [38]. Indeed it is the vast number of structures now
+totalling 240,000 in the Protein Data Bank that underpinned the AlphaFold prediction of
+protein folds. Optimized anomalous differences using a variable X-ray wavelength con-
+tinue to have a strong role to play in macromolecular crystallography. About a third of
+all proteins are metalloproteins. So, to be certain of the type of metal and the metal atom
+locations is done using a tuneable synchrotron radiation beamline. Furthermore, all the
+domains of macromolecular X-ray crystallography were changed by the breakthrough
+led by Keith Hodgson at SSRL in 1976 whereby 90% of protein crystal structures are
+determined at synchrotron X-radiation facilities.
+
+204
+J. R. HELLIWELL
+In the future
+We are seeing several other developments in synchrotron radiation macromolecular crys-
+tallography besides structure determination and ensuring precision of metal atom identi-
+fication and location just mentioned. First, beamline facilities for studies of time-resolved
+changes in structure is a major focus to help elucidate functional mechanisms (see the
+recent book by Moffat and Lattman [39]). Second, searching for new binding fragments in
+the search for new drugs has led to dedicated beamlines for these activities (for a recent
+overview from an industry perspective, see [40]). An effort is underway to investigate
+macromolecular crystal structures determined at ‘body temperatures’ such as 37°C for
+patient relevance and at thermophile and hyperthermophile organisms’ temperatures [41].
+Third the democratization of science that centralized beamlines have brought has put the
+synchrotron facilities in a pivotal position to similarly administer centralized electron cry-
+omicroscopy facilities. These can also include instruments for neutron macromolecular
+crystallography; the Photon and Neutrons Campus in Grenoble also with cryoEM is one
+such with multiprobe centres [42]. Taken altogether these facilities, and allied methods,
+have brought great opportunities for the structural biologist and structural chemist. A
+recent book describing all these is [26].
+Disclosure statement
+No potential conflict of interest was reported by the author.
+ORCID
+John R. Helliwell
+http://orcid.org/0000-0002-0520-7540
+References
+[1] Phillips JC, Wlodawer A, Yevitz MM, et al. Applications of synchrotron radiation to
+protein crystallography: preliminary results. Proc Natl Acad Sci USA. 1976;73:128–132.
+doi:10.1073/pnas.73.1.128
+[2] Helliwell JR, Nave C, Szebenyi DM. 50th anniversary of the Stanford SSRL synchrotron
+radiation and protein crystallography initiative. J Synchrotron Radiat. 2026;33(Pt 1):1–6.
+doi:10.1107/S1600577525002917
+[3] Rosenbaum G, Holmes KC, Witz J. Synchrotron radiation as a source for X-ray diffraction.
+Nature. 1971;230(5294):434–437. doi:10.1038/230434a0
+[4] Harmsen A, Leberman R, Schulz GE. Comparison of protein crystal diffraction patterns
+and absolute intensities from synchrotron and conventional X-ray sources. J Mol Biol.
+1976;104:311–314. doi:10.1016/0022-2836(76)90017-6
+[5] Phillips JC, Wlodawer A, Goodfellow JM, et al. Applications of synchrotron radiation to protein
+crystallography. II. Anomalous scattering, absolute intensity and polarization. Acta Crystallogr,
+Sect A. 1977;33:445–455. doi:10.1107/S0567739477001168
+[6] Phillips JC, Cerino JA, Hodgson KO. A four-circle diffractometer on a focused, tuneable syn-
+chrotron radiation source: mechanical design, computer control and evaluation of system
+performance. J Appl Crystallogr. 1979;12:592–600. doi:10.1107/S0021889879013315
+[7] Phillips JC, Hodgson KO. The use of anomalous scattering effects to phase diffraction patterns
+from macromolecules. Acta Crystallogr, Sect A. 1980;36:856–864. doi:10.1107/S0567739480
+001817
+
+CRYSTALLOGRAPHY REVIEWS
+205
+[8] Templeton DH, Templeton LK, Phillips JC, et al. Anomalous scattering of X-rays by cesium
+and cobalt measured with synchrotron radiation. Acta Crystallogr, Sect A. 1980;36:436–442.
+doi:10.1107/S0567739480000940
+[9] Hoppe W, Jakubowski U. The determination of phases of erythrocruorin using the two-
+wavelength method with iron as anomalous scatterer. In: S Ramaseshan, SC Abrahams, editors.
+Anomalous scattering. 1975. p. 437–461.
+[10] Helliwell JR. Application of synchrotron radiation to protein crystallography: preliminary
+experiments on 6PDGH crystals using the NINA synchrotron [DPhil thesis Appendix 1].
+Oxford: University of Oxford; 1977.
+[11] Hendrickson W, Horton JR, LeMaster DM. Selenomethionyl proteins produced for analysis by
+multiwavelength anomalous diffraction (MAD): a vehicle for direct determination of three-
+dimensional structure. EMBO J. 1990;9:1665–1672. doi:10.1002/j.1460-2075.1990.tb08287.x
+[12] Hendrickson WA. Maturation of MAD phasing for the determination of macromolecular
+structures. J Synchrotron Radiat. 1999;6(4):845–851. doi:10.1107/S0909049599007591
+[13] Hendrickson WA. Facing the phase problem. IUCrJ. 2023;10:521–543. doi:10.1107/S20522525
+23006449
+[14] Peterson MR, Harrop SJ, McSweeney SM, et al. MAD phasing strategies explored with a
+brominated oligonucleotide crystal at 1.65Å resolution. J Synchrotron Radiat. 1996;3:24–34.
+doi:10.1107/S0909049595013288
+[15] Guss JM, Merritt EA, Phizackerley RP, et al. Phase determination by multiple-wavelength
+X-Ray diffraction: crystal structure of a basic "blue"copper protein from cucumbers. Science.
+1988;241(4867):806–811. doi:10.1126/science.3406739
+[16] Fourme R, Shepard W, Kahn R. Application of the anomalous dispersion of X-rays to macro-
+molecular crystallography. Prog Biophys Mol Biol. 1995;64(2–3):167–199. doi:10.1016/S0079-
+6107(96)00002-8
+[17] Mukherjee AK, Helliwell JR, Main P. The use of MULTAN to locate the positions of
+anomalous scatterers. Acta Crystallogr Sect A Found Crystallogr. 1989;45(10):715–718.
+doi:10.1107/S0108767389006239
+[18] Germain G, Main P, Woolfson EM. The application of phase relationships to com-
+plex structures. III. The optimum use of phase relationships. Acta Crystallogr, Sect A.
+1971;27(4):368–376. doi:10.1107/S0567739471000822
+[19] Schneider TR, Sheldrick GM. Substructure solution with SHELXD. Acta Crystallogr Sect D
+Biol Crystallogr. 2002;58:1772–1779. doi:10.1107/S0907444902011678
+[20] Helliwell JR. ESRF foundation phase report. Grenoble: ESRF; 1987.
+[21] Hedman B, Hodgson KO, Helliwell JR, et al. Protein microcrystal diffraction and the effects
+of radiation damage with ultra-high-flux synchrotron radiation. Proc Natl Acad Sci USA.
+1985;82:7604–7607. doi:10.1073/pnas.82.22.7604
+[22] Haedener A, Matzinger PK, Battersby AR, et al. Determination of the structure of
+selenomethionine-labelled hydroxymethylbilane synthase in its active form by multi-
+wavelength anomalous dispersion. Acta Crystallogr Sect D Biol Crystallogr. 1999;55:631–643.
+doi:10.1107/S0907444998014711
+[23] Cassetta A, Deacon AM, Ealick SE, et al. Development of instrumentation and methods for
+MAD and structural genomics at the SRS, ESRF, CHESS and Elettra facilities. J Synchrotron
+Radiat 1999;6:822–833. doi:10.1107/S0909049599006172
+[24] Helliwell JR. Macromolecular crystallography with synchrotron radiation. Cambridge: Cam-
+bridge University Press; 1992.
+[25] Helliwell JR. The evolution of synchrotron radiation and the growth of its importance in
+crystallography. Crystallogr Rev. 2012;18(1):33–93. doi:10.1080/0889311X.2011.631919
+[26] Helliwell JR. Certifying central facility beamlines for biological and chemical crystallography
+and allied methods. Cham: Springer; 2025.
+[27] Förster A, Brandstetter S, Schulze-Briese C. Transforming X-ray detection with hybrid photon
+counting detectors. Philos Trans R Soc A: Math Phys Eng Sci. 2019;377(2147):20180241.
+[28] Collaborative Computing Project. The CCP4 suite: programs for protein crystallography. Acta
+Cryst. 1994;D50:760–763.
+
+206
+J. R. HELLIWELL
+[29] Wang BC. Resolution of phase ambiguity in macromolecular crystallography. In: Wyckoff HW,
+Hirs CHW, Timasheff SN, editors. Methods in enzymology Vol. 115. Academic Press; 1985. p.
+90–112.
+[30] Arndt UW, Greenhough TJ, Helliwell JR, et al. Optimized anomalous dispersion in crys-
+tallography: a synchrotron X-ray polychromatic simultaneous profile method. Nature.
+1982;298(5877):835–838. doi:10.1038/298835a0
+[31] Hodeau JL, Vacinova J, Garreau Y, et al. Diffraction anomalous fine structure measurements
+by using an energy/angular ‘‘dispersive diffraction’’ experimental setup. Rev Sci Instrum.
+1995;66(2):1499–1501. doi:10.1063/1.1145954
+[32] Einspahr H, Suguna K, Suddath FL, et al. The location of manganese and calcium ion cofactors
+in pea lectin crystals by use of anomalous dispersion and tuneable synchrotron X-radiation.
+Acta Crystallogr Sect B Struct Sci. 1985;41(5):336–341. doi:10.1107/S0108768185002233
+[33] Nieh Y-P, Helliwell JR. Time differences between Friedel reflections: accuracy of crys-
+tal setting and requirements on beam stability. J Synchrotron Radiat. 1995;2:79–82.
+doi:10.1107/S0909049595001518
+[34] Perrakis A, Cipriani F, Castagna JC, et al. Protein microcrystals and the design of a microd-
+iffractometer: current experience and plans at EMBL and ESRF/ID13. Acta Crystallogr Sect D
+Biol Crystallogr. 1999;55(10):1765–1770. doi:10.1107/S0907444999009348
+[35] Djinović Carugo K, Helliwell JR, Stuhrmann H, et al. Softer and soft X-rays in macromolecular
+crystallography. J Synchrotron Radiat 2005;12(4):410–419. doi:10.1107/S0909049504025762
+[36] Gonzalez A, Krojer T, Nan J, et al. Status and perspective of protein crystallography at the
+first multi-bend achromat based synchrotron MAX IV. J Synchrotron Radiat. 2025;32:779–791.
+doi:10.1107/S1600577525002255
+[37] Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold.
+Nature. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
+[38] Rossmann MG. The molecular replacement method. Acta Crystallogr Sect A Found Crystal-
+logr. 1990;46:73–82. doi:10.1107/S0108767389009815
+[39] Moffat K, Lattman EE. Dynamics and kinetics in structural biology: unravelling function
+through time-resolved structural analysis. Hoboken, NJ: John Wiley & Sons; 2023.
+[40] Käck H, Sjögren T. Macromolecular crystallography from an industrial perspective – the
+impact of synchrotron radiation on structure-based drug discovery. J Synchrotron Radiat.
+2025;32:294–303. doi:10.1107/S1600577524012281
+[41] Brink A, Helliwell JR, Jacobs FJF. Towards patient-relevant structures: reviewing body-
+temperature biological macromolecules and their ligands for pharmaceutical applications. Acta
+Crystallogr Sect D Struct Biol. 2026;82:1–10. doi:10.1107/S2059798325010617
+[42] McCarthy AA, Basu S, Bernaudat F, et al. Current and future perspectives for structural
+biology at the Grenoble EPN campus: a comprehensive overview. J Synchrotron Radiat.
+2025;32:577–594. doi:10.1107/S1600577525002012

@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Perspectives on the 50th anniversary of synchrotron radiation protein crystallography</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">John</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+							<affiliation key="aff0">
+								<note type="raw_affiliation">Chemistry Department , University of Manchester , Manchester , UK</note>
+								<orgName type="department">Chemistry Department</orgName>
+								<orgName type="institution">University of Manchester</orgName>
+								<address>
+									<settlement>Manchester</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Perspectives on the 50th anniversary of synchrotron radiation protein crystallography</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">AA59E749B8A3F78AB71B50F6E7D66E65</idno>
+					<idno type="DOI">10.1080/0889311X.2026.2615251</idno>
+					<note type="submission">Received 9 December 2025 Accepted 30 December 2025</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2-SNAPSHOT" ident="GROBID" when="2026-06-14T16:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Synchrotron radiation</term>
+					<term>protein crystallography</term>
+					<term>multiple wavelength phasing</term>
+					<term>Protein Data Bank</term>
+					<term>protein fold prediction</term>
+					<term>future developments</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><s>In 2026, it will be the 50th Anniversary of the Stanford Synchrotron Radiation Laboratory (SSRL) SR and protein crystallography initiative led by Keith Hodgson and published in 1976.</s><s>This seminal research led to an explosion of experimental protein crystal structures these past 5 decades whereby 90% of protein crystal structures are determined at synchrotron X-radiation facilities.</s><s>It is the vast number of structures now totalling 240,000 in the Protein Data Bank that underpinned the AlphaFold prediction of protein folds.</s></p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p><s>In 2026, it will be the 50th Anniversary of the Stanford Synchrotron Radiation Laboratory (SSRL) SR and protein crystallography initiative led by Keith Hodgson and published in 1976 in PNAS <ref type="bibr" target="#b0">[1]</ref>.</s><s>Recognizing this the IUCr's Journal of Synchrotron Radiation (JSR) produced a special issue entitled 'The 50th Anniversary of the Stanford SSRL SR and protein crystallography initiative led by Keith Hodgson'.</s><s>The majority of the world's SR and XFEL facilities submitted articles for this in JSR.</s><s>This collection of articles is introduced by Helliwell and Szebenyi <ref type="bibr" target="#b1">[2]</ref> here: <ref type="url" target="https://journals.iucr.org/special_issues/2025/ssrlprotein/">https://journals.iucr.org/special_issues/2025/ssrlprotein/</ref>.</s><s>This seminal research by Keith Hodgson led to an explosion of experimental protein crystal structures these past 5 decades whereby 90% of protein crystal structures are determined at synchrotron X-radiation facilities.</s></p><p><s>The first reference of ref. <ref type="bibr" target="#b0">[1]</ref> was to a paper from the DESY Synchrotron Laboratory in Hamburg, Germany <ref type="bibr" target="#b2">[3]</ref> focussing on the broader range of the whole of biological diffraction and the great potential of synchrotron radiation.</s><s>Indeed, in parallel with the paper from SSRL <ref type="bibr" target="#b0">[1]</ref> was the paper from DESY, Hamburg <ref type="bibr" target="#b3">[4]</ref>.</s><s>All three of these papers were important.</s><s>These vital steps included the multiple wavelength phasing method with SR, which is fully tuneable, led by Keith Hodgson and documented in refs.</s><s><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref>.</s><s>Those papers cited the two-wavelength phasing for an iron containing protein with two laboratory X-ray sources, one with a Ni anode and one with a Co anode <ref type="bibr" target="#b8">[9]</ref>.</s><s>These stimulated my practical activity in this field <ref type="bibr" target="#b9">[10]</ref>.</s><s>The much more versatile synchrotron radiation method was expanded in its applicability in a major way by the seleno-methionine protein production methodology initiated by Wayne Hendrickson <ref type="bibr" target="#b10">[11]</ref> who also expanded the multiple wavelength phasing method, 'MAD' <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13]</ref>.</s><s>Helliwell, initially in Keele, then York and Manchester Universities, and as a beamline scientist at the UK's SRS established protein crystallography beamlines (7.2, 9.6 and 9.5) between 1979 and 2008.</s><s>These also made sustained and broad contributions to this vital protein crystal structure determining method.</s></p><p><s>A key issue was considering how many X-ray wavelengths were necessary for a precise determination of the phases of the X-ray reflections.</s><s>It had been established by Hoppe and Jakubowski <ref type="bibr" target="#b8">[9]</ref> what was needed in principle and indeed in practice with their home laboratory X-ray sources applied in their actual case of erythrocruorin that two wavelengths were sufficient leading to a dispersive difference and one anomalous difference, three measurements in all.</s><s>Helliwell's laboratory explored the number of wavelengths in various combinations up to four and their dispersive and anomalous differences measurements needs in detail <ref type="bibr" target="#b13">[14]</ref> using SRS 9.5.</s></p><p><s>For new protein crystal structures, at SSRL Keith Hodgson led the research on the copper containing cucumber basic protein, which was amongst the first <ref type="bibr" target="#b14">[15]</ref> and a critical demonstration of MAD.</s><s>The French LURE synchrotron facility <ref type="bibr" target="#b15">[16]</ref> also made important demonstration studies as did the NSLS and elsewhere <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13]</ref>.</s><s>Mukherjee, Helliwell and Main <ref type="bibr" target="#b16">[17]</ref> combined direct methods with SR anomalous differences data measured at the SRS 7.2.</s><s>This innovation allowed the positions of the anomalous scatterers in a protein to be done using the direct methods program MULTAN <ref type="bibr" target="#b17">[18]</ref>.</s><s>This was a critical step as the cases increased where larger numbers of anomalous scatterers were harnessed in the MAD phase determinations.</s><s>For locating relatively large numbers of anomalous scatterers efficiently from MAD or SAD data SHELXD was developed <ref type="bibr" target="#b18">[19]</ref>.</s><s>SHELXD's approach involved iterative dual-space direct methods, i.e. based on phase refinement in reciprocal space and peak picking in real space.</s></p><p><s>The planning of the ESRF's macromolecular crystallography in the mid-1980s and into the 1990s <ref type="bibr" target="#b19">[20]</ref> created a great expansion of synchrotron radiation usage in protein crystallography.</s><s>Greatly facilitating the detailing of these plans was the 'New Rings Workshop' held at SSRL, co-organized by Keith Hodgson with Dr Herman Winick, a Stanford accelerator machine physicist.</s><s>Critical were the tests on protein microcrystals showing that a 20-micron dimension microcrystal could withstand the radiation and thermal blast of such ultra-intense X-ray beams <ref type="bibr" target="#b20">[21]</ref>.</s><s>One of the first MAD experiments done at ESRF was on BM14 <ref type="bibr" target="#b21">[22]</ref>.</s><s>The eventual extensive development of instrumentation and methods for multi-wavelength anomalous dispersion worldwide namely at the SRS, ESRF, CHESS and Elettra facilities was described in <ref type="bibr" target="#b22">[23]</ref>.</s></p><p><s>Keith Hodgson's experience in SR EXAFS on a wide range of bioinorganic chemistry samples enabled the synergy between tuneable X-ray synchrotron radiation for multiple wavelength phasing in crystallography and scanning of the X-ray wavelength in measuring EXAFS spectra put him in a pivotal position to develop both scientific fields.</s><s>The International Union of Crystallography (IUCr) established a Commission on XAFS in 1996 (<ref type="url" target="http://ww1.iucr.org/iucr-top/cexec/rep96/cxafs.htm">http://ww1.iucr.org/iucr-top/cexec/rep96/cxafs.htm</ref>).</s></p><p><s>Improved X-ray detectors over the commonly used photographic film in the 1970s for measuring small intensity signals was another critical component of the ultimate success of the MAD phasing method and macromolecular crystallography in general (see relevant sections in refs <ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref>).</s><s>At SSRL led by Keith Hodgson their multi-wire proportional chamber (MWPC) was a critical step and was used in their determination of the crystal structure of the cucumber basic protein <ref type="bibr" target="#b14">[15]</ref>.</s><s>At LURE, Fourme and Kahn adapted George Charpak's CERN radial drift chamber MWPC for multiple wavelength phasing.</s><s>SRS collaborated with Enraf Nonius commercializing the Arndt (MRC Laboratory of Molecular Biology, Cambridge) TV intensifier detector, with Rigaku Corporation Japan with their image plage detector reader and the UK Rutherford Appleton Laboratory with a multiwire proportional chamber.</s><s>See chapter 5 of ref. <ref type="bibr" target="#b23">[24]</ref>.</s><s>These improved detectors each had their strengths and limitations and became superseded by the ideal properties pixel detector developed at the Swiss PSI Laboratory and commercialized by their spin out company Dectris <ref type="bibr" target="#b26">[27]</ref>.</s><s>Software developed for multiple isomorphous replacement was harnessed for multiple wavelength phasing, such as in the MLPHARE program of CCP4 <ref type="bibr" target="#b27">[28]</ref>.</s><s>Eventually, as the diffraction intensity measurements became better quality (i.e.</s><s>lower errors) due to the improved detectors, single wavelength phasing became routine where the ambiguity in each reflection phase from its one anomalous difference was resolved by solvent flattening, a procedure led by Wang <ref type="bibr" target="#b28">[29]</ref>.</s></p><p><s>There were some false steps, and temporary challenges, in developing the MAD phasing method.</s><s>These included: the need for at least four wavelengths for a least squares analysis of phases which were unnecessary (as shown by <ref type="bibr" target="#b13">[14]</ref>); the proposal of Arndt to make a polychromatic profile, made feasible in experimental terms by SRS 7.2 <ref type="bibr" target="#b29">[30]</ref> although that did become applied in inorganic small molecule crystallography as the renamed method of DAFS (diffraction anomalous fine structure) was called <ref type="bibr" target="#b30">[31]</ref>.</s><s>An important experimental approach initially, when the synchrotron source X-ray beam intensity could vary with time, was a well aligned protein crystal to ensure the anomalous differences were measured at the same time to improve their precision as much as possible <ref type="bibr" target="#b31">[32,</ref><ref type="bibr" target="#b32">33]</ref>.</s></p><p><s>There are some key developments need mentioning to offer a more rounded narrative of the story.</s><s>For instance, with the advent of third generation light sources as mentioned above specialized micro focusing diffractometers became available, with seminal work done at ESRF <ref type="bibr" target="#b33">[34]</ref>.</s><s>This allowed to routinely significantly reduce the sample size.</s><s>Soft X-ray phasing became available, and it involved new beamline and software developments (see review <ref type="bibr" target="#b34">[35]</ref>).</s><s>Multibend achromat devices in the machine accelerators themselves have become available in the last 15 years promising brilliance never expected before <ref type="bibr" target="#b35">[36]</ref>.</s><s>Several Nobel prizes have been awarded in structural biology where synchrotron radiation protein crystallography played a key role.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>To sum up the present</head><p><s>AlphaFold <ref type="bibr" target="#b36">[37]</ref> is now dominating macromolecular crystal structure determination as the start for molecular replacement <ref type="bibr" target="#b37">[38]</ref>.</s><s>Indeed it is the vast number of structures now totalling 240,000 in the Protein Data Bank that underpinned the AlphaFold prediction of protein folds.</s><s>Optimized anomalous differences using a variable X-ray wavelength continue to have a strong role to play in macromolecular crystallography.</s><s>About a third of all proteins are metalloproteins.</s><s>So, to be certain of the type of metal and the metal atom locations is done using a tuneable synchrotron radiation beamline.</s><s>Furthermore, all the domains of macromolecular X-ray crystallography were changed by the breakthrough led by Keith Hodgson at SSRL in 1976 whereby 90% of protein crystal structures are determined at synchrotron X-radiation facilities.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>In the future</head><p><s>We are seeing several other developments in synchrotron radiation macromolecular crystallography besides structure determination and ensuring precision of metal atom identification and location just mentioned.</s><s>First, beamline facilities for studies of time-resolved changes in structure is a major focus to help elucidate functional mechanisms (see the recent book by Moffat and Lattman <ref type="bibr" target="#b38">[39]</ref>).</s><s>Second, searching for new binding fragments in the search for new drugs has led to dedicated beamlines for these activities (for a recent overview from an industry perspective, see <ref type="bibr" target="#b39">[40]</ref>).</s><s>An effort is underway to investigate macromolecular crystal structures determined at 'body temperatures' such as 37°C for patient relevance and at thermophile and hyperthermophile organisms' temperatures <ref type="bibr" target="#b40">[41]</ref>.</s><s>Third the democratization of science that centralized beamlines have brought has put the synchrotron facilities in a pivotal position to similarly administer centralized electron cryomicroscopy facilities.</s><s>These can also include instruments for neutron macromolecular crystallography; the Photon and Neutrons Campus in Grenoble also with cryoEM is one such with multiprobe centres <ref type="bibr" target="#b41">[42]</ref>.</s><s>Taken altogether these facilities, and allied methods, have brought great opportunities for the structural biologist and structural chemist.</s><s>A recent book describing all these is <ref type="bibr" target="#b25">[26]</ref>.</s></p></div>		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Disclosure statement</head><p><s>No potential conflict of interest was reported by the author.</s></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID</head><p><s>John R. Helliwell <ref type="url" target="http://orcid.org/0000-0002-0520-7540">http://orcid.org/0000-0002-0520-7540</ref></s></p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Applications of synchrotron radiation to protein crystallography: preliminary results</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wlodawer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Yevitz</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.73.1.128</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc Natl Acad Sci</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="128" to="132" />
+			<date type="published" when="1976">1976</date>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phillips JC, Wlodawer A, Yevitz MM, et al. Applications of synchrotron radiation to protein crystallography: preliminary results. Proc Natl Acad Sci USA. 1976;73:128-132. doi:10.1073/pnas.73.1.128</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">50th anniversary of the Stanford SSRL synchrotron radiation and protein crystallography initiative</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Nave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Szebenyi</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S1600577525002917</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">Pt 1</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2026">2026</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helliwell JR, Nave C, Szebenyi DM. 50th anniversary of the Stanford SSRL synchrotron radiation and protein crystallography initiative. J Synchrotron Radiat. 2026;33(Pt 1):1-6. doi:10.1107/S1600577525002917</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Synchrotron radiation as a source for X-ray diffraction</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Witz</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/230434a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">230</biblScope>
+			<biblScope unit="issue">5294</biblScope>
+			<biblScope unit="page" from="434" to="437" />
+			<date type="published" when="1971">1971</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rosenbaum G, Holmes KC, Witz J. Synchrotron radiation as a source for X-ray diffraction. Nature. 1971;230(5294):434-437. doi:10.1038/230434a0</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Comparison of protein crystal diffraction patterns and absolute intensities from synchrotron and conventional X-ray sources</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Harmsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Leberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Schulz</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0022-2836(76)90017-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Mol Biol</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="page" from="311" to="314" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Harmsen A, Leberman R, Schulz GE. Comparison of protein crystal diffraction patterns and absolute intensities from synchrotron and conventional X-ray sources. J Mol Biol. 1976;104:311-314. doi:10.1016/0022-2836(76)90017-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Applications of synchrotron radiation to protein crystallography. II. Anomalous scattering, absolute intensity and polarization</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wlodawer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0567739477001168</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr, Sect A</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="445" to="455" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phillips JC, Wlodawer A, Goodfellow JM, et al. Applications of synchrotron radiation to protein crystallography. II. Anomalous scattering, absolute intensity and polarization. Acta Crystallogr, Sect A. 1977;33:445-455. doi:10.1107/S0567739477001168</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A four-circle diffractometer on a focused, tuneable synchrotron radiation source: mechanical design, computer control and evaluation of system performance</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Cerino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">O</forename><surname>Hodgson</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0021889879013315</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Appl Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="592" to="600" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phillips JC, Cerino JA, Hodgson KO. A four-circle diffractometer on a focused, tuneable syn- chrotron radiation source: mechanical design, computer control and evaluation of system performance. J Appl Crystallogr. 1979;12:592-600. doi:10.1107/S0021889879013315</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The use of anomalous scattering effects to phase diffraction patterns from macromolecules</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">O</forename><surname>Hodgson</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0567739480001817</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr, Sect A</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="856" to="864" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Phillips JC, Hodgson KO. The use of anomalous scattering effects to phase diffraction patterns from macromolecules. Acta Crystallogr, Sect A. 1980;36:856-864. doi:10.1107/S0567739480</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Anomalous scattering of X-rays by cesium and cobalt measured with synchrotron radiation</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Templeton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Templeton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Phillips</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0567739480000940</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr, Sect A</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="436" to="442" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Templeton DH, Templeton LK, Phillips JC, et al. Anomalous scattering of X-rays by cesium and cobalt measured with synchrotron radiation. Acta Crystallogr, Sect A. 1980;36:436-442. doi:10.1107/S0567739480000940</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The determination of phases of erythrocruorin using the twowavelength method with iron as anomalous scatterer</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hoppe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Jakubowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Anomalous scattering</title>
+		<editor>
+			<persName><surname>S Ramaseshan</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Abrahams</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<biblScope unit="page" from="437" to="461" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hoppe W, Jakubowski U. The determination of phases of erythrocruorin using the two- wavelength method with iron as anomalous scatterer. In: S Ramaseshan, SC Abrahams, editors. Anomalous scattering. 1975. p. 437-461.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Application of synchrotron radiation to protein crystallography: preliminary experiments on 6PDGH crystals using the NINA synchrotron</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1977">1977</date>
+			<publisher>University of Oxford</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">DPhil thesis Appendix 1</note>
+	<note type="raw_reference">Helliwell JR. Application of synchrotron radiation to protein crystallography: preliminary experiments on 6PDGH crystals using the NINA synchrotron [DPhil thesis Appendix 1]. Oxford: University of Oxford; 1977.</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Selenomethionyl proteins produced for analysis by multiwavelength anomalous diffraction (MAD): a vehicle for direct determination of threedimensional structure</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hendrickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Lemaster</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/j.1460-2075.1990.tb08287.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">EMBO J</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1665" to="1672" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hendrickson W, Horton JR, LeMaster DM. Selenomethionyl proteins produced for analysis by multiwavelength anomalous diffraction (MAD): a vehicle for direct determination of three- dimensional structure. EMBO J. 1990;9:1665-1672. doi:10.1002/j.1460-2075.1990.tb08287.x</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Maturation of MAD phasing for the determination of macromolecular structures</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>Hendrickson</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0909049599007591</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="845" to="851" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hendrickson WA. Maturation of MAD phasing for the determination of macromolecular structures. J Synchrotron Radiat. 1999;6(4):845-851. doi:10.1107/S0909049599007591</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Facing the phase problem</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>Hendrickson</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S2052252523006449</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IUCrJ</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="521" to="543" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hendrickson WA. Facing the phase problem. IUCrJ. 2023;10:521-543. doi:10.1107/S20522525 23006449</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">MAD phasing strategies explored with a brominated oligonucleotide crystal at 1.65Å resolution</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Peterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Harrop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Mcsweeney</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0909049595013288</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="24" to="34" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Peterson MR, Harrop SJ, McSweeney SM, et al. MAD phasing strategies explored with a brominated oligonucleotide crystal at 1.65Å resolution. J Synchrotron Radiat. 1996;3:24-34. doi:10.1107/S0909049595013288</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Phase determination by multiple-wavelength X-Ray diffraction: crystal structure of a basic &quot; blue&quot; copper protein from cucumbers</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Guss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Merritt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Phizackerley</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.3406739</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">241</biblScope>
+			<biblScope unit="issue">4867</biblScope>
+			<biblScope unit="page" from="806" to="811" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guss JM, Merritt EA, Phizackerley RP, et al. Phase determination by multiple-wavelength X-Ray diffraction: crystal structure of a basic &quot; blue&quot; copper protein from cucumbers. Science. 1988;241(4867):806-811. doi:10.1126/science.3406739</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Application of the anomalous dispersion of X-rays to macromolecular crystallography</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fourme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Shepard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kahn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0079-6107(96)00002-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Prog Biophys Mol Biol</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="167" to="199" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fourme R, Shepard W, Kahn R. Application of the anomalous dispersion of X-rays to macro- molecular crystallography. Prog Biophys Mol Biol. 1995;64(2-3):167-199. doi:10.1016/S0079- 6107(96)00002-8</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The use of MULTAN to locate the positions of anomalous scatterers</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Main</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0108767389006239</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect A Found Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="715" to="718" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mukherjee AK, Helliwell JR, Main P. The use of MULTAN to locate the positions of anomalous scatterers. Acta Crystallogr Sect A Found Crystallogr. 1989;45(10):715-718. doi:10.1107/S0108767389006239</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The application of phase relationships to complex structures. III. The optimum use of phase relationships</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Germain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Main</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Woolfson</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0567739471000822</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr, Sect A</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="368" to="376" />
+			<date type="published" when="1971">1971</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Germain G, Main P, Woolfson EM. The application of phase relationships to com- plex structures. III. The optimum use of phase relationships. Acta Crystallogr, Sect A. 1971;27(4):368-376. doi:10.1107/S0567739471000822</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Substructure solution with SHELXD</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Sheldrick</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0907444902011678</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect D Biol Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="1772" to="1779" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schneider TR, Sheldrick GM. Substructure solution with SHELXD. Acta Crystallogr Sect D Biol Crystallogr. 2002;58:1772-1779. doi:10.1107/S0907444902011678</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">ESRF foundation phase report</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+			<publisher>ESRF</publisher>
+			<pubPlace>Grenoble</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helliwell JR. ESRF foundation phase report. Grenoble: ESRF; 1987.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Protein microcrystal diffraction and the effects of radiation damage with ultra-high-flux synchrotron radiation</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hedman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">O</forename><surname>Hodgson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.82.22.7604</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc Natl Acad Sci</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="7604" to="7607" />
+			<date type="published" when="1985">1985</date>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hedman B, Hodgson KO, Helliwell JR, et al. Protein microcrystal diffraction and the effects of radiation damage with ultra-high-flux synchrotron radiation. Proc Natl Acad Sci USA. 1985;82:7604-7607. doi:10.1073/pnas.82.22.7604</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Determination of the structure of selenomethionine-labelled hydroxymethylbilane synthase in its active form by multiwavelength anomalous dispersion</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Haedener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Matzinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Battersby</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0907444998014711</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect D Biol Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="631" to="643" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haedener A, Matzinger PK, Battersby AR, et al. Determination of the structure of selenomethionine-labelled hydroxymethylbilane synthase in its active form by multi- wavelength anomalous dispersion. Acta Crystallogr Sect D Biol Crystallogr. 1999;55:631-643. doi:10.1107/S0907444998014711</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Development of instrumentation and methods for MAD and structural genomics at the SRS, ESRF, CHESS and Elettra facilities</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cassetta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Deacon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Ealick</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0909049599006172</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="822" to="833" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cassetta A, Deacon AM, Ealick SE, et al. Development of instrumentation and methods for MAD and structural genomics at the SRS, ESRF, CHESS and Elettra facilities. J Synchrotron Radiat 1999;6:822-833. doi:10.1107/S0909049599006172</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<title level="m">Macromolecular crystallography with synchrotron radiation</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helliwell JR. Macromolecular crystallography with synchrotron radiation. Cambridge: Cam- bridge University Press; 1992.</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The evolution of synchrotron radiation and the growth of its importance in crystallography</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/0889311X.2011.631919</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Crystallogr Rev</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="93" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helliwell JR. The evolution of synchrotron radiation and the growth of its importance in crystallography. Crystallogr Rev. 2012;18(1):33-93. doi:10.1080/0889311X.2011.631919</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Certifying central facility beamlines for biological and chemical crystallography and allied methods</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<publisher>Springer</publisher>
+			<pubPlace>Cham</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Helliwell JR. Certifying central facility beamlines for biological and chemical crystallography and allied methods. Cham: Springer; 2025.</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Transforming X-ray detection with hybrid photon counting detectors</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Förster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Brandstetter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schulze-Briese</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Philos Trans R Soc A: Math Phys Eng Sci</title>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="page">20180241</biblScope>
+			<date type="published" when="2019">2019. 2147</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Förster A, Brandstetter S, Schulze-Briese C. Transforming X-ray detection with hybrid photon counting detectors. Philos Trans R Soc A: Math Phys Eng Sci. 2019;377(2147):20180241.</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The CCP4 suite: programs for protein crystallography</title>
+		<author>
+			<orgName type="collaboration">Collaborative Computing Project</orgName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Cryst</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="760" to="763" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Collaborative Computing Project. The CCP4 suite: programs for protein crystallography. Acta Cryst. 1994;D50:760-763.</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Resolution of phase ambiguity in macromolecular crystallography</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Methods in enzymology</title>
+		<editor>
+			<persName><forename type="first">H</forename><forename type="middle">W</forename><surname>Wyckoff</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Chw</forename><surname>Hirs</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Timasheff</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1985">1985</date>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="90" to="112" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang BC. Resolution of phase ambiguity in macromolecular crystallography. In: Wyckoff HW, Hirs CHW, Timasheff SN, editors. Methods in enzymology Vol. 115. Academic Press; 1985. p. 90-112.</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Optimized anomalous dispersion in crystallography: a synchrotron X-ray polychromatic simultaneous profile method</title>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">W</forename><surname>Arndt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Greenhough</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/298835a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">298</biblScope>
+			<biblScope unit="issue">5877</biblScope>
+			<biblScope unit="page" from="835" to="838" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Arndt UW, Greenhough TJ, Helliwell JR, et al. Optimized anomalous dispersion in crys- tallography: a synchrotron X-ray polychromatic simultaneous profile method. Nature. 1982;298(5877):835-838. doi:10.1038/298835a0</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Diffraction anomalous fine structure measurements by using an energy/angular &apos;&apos;dispersive diffraction&apos;&apos; experimental setup</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Hodeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vacinova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Garreau</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.1145954</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Rev Sci Instrum</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1499" to="1501" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hodeau JL, Vacinova J, Garreau Y, et al. Diffraction anomalous fine structure measurements by using an energy/angular &apos;&apos;dispersive diffraction&apos;&apos; experimental setup. Rev Sci Instrum. 1995;66(2):1499-1501. doi:10.1063/1.1145954</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The location of manganese and calcium ion cofactors in pea lectin crystals by use of anomalous dispersion and tuneable synchrotron X-radiation</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Einspahr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Suguna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">L</forename><surname>Suddath</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0108768185002233</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect B Struct Sci</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="336" to="341" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Einspahr H, Suguna K, Suddath FL, et al. The location of manganese and calcium ion cofactors in pea lectin crystals by use of anomalous dispersion and tuneable synchrotron X-radiation. Acta Crystallogr Sect B Struct Sci. 1985;41(5):336-341. doi:10.1107/S0108768185002233</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Time differences between Friedel reflections: accuracy of crystal setting and requirements on beam stability</title>
+		<author>
+			<persName><forename type="first">Y-P</forename><surname>Nieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0909049595001518</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="79" to="82" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nieh Y-P, Helliwell JR. Time differences between Friedel reflections: accuracy of crys- tal setting and requirements on beam stability. J Synchrotron Radiat. 1995;2:79-82. doi:10.1107/S0909049595001518</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Protein microcrystals and the design of a microdiffractometer: current experience and plans at EMBL and ESRF/ID13</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perrakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Cipriani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Castagna</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0907444999009348</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect D Biol Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1765" to="1770" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Perrakis A, Cipriani F, Castagna JC, et al. Protein microcrystals and the design of a microd- iffractometer: current experience and plans at EMBL and ESRF/ID13. Acta Crystallogr Sect D Biol Crystallogr. 1999;55(10):1765-1770. doi:10.1107/S0907444999009348</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Softer and soft X-rays in macromolecular crystallography</title>
+		<author>
+			<persName><forename type="first">Djinović</forename><surname>Carugo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Helliwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Stuhrmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<idno type="DOI">10.1107/S0909049504025762</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="410" to="419" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Djinović Carugo K, Helliwell JR, Stuhrmann H, et al. Softer and soft X-rays in macromolecular crystallography. J Synchrotron Radiat 2005;12(4):410-419. doi:10.1107/S0909049504025762</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Status and perspective of protein crystallography at the first multi-bend achromat based synchrotron MAX IV</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Krojer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><forename type="middle">J</forename></persName>
+		</author>
+		<idno type="DOI">10.1107/S1600577525002255</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="779" to="791" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gonzalez A, Krojer T, Nan J, et al. Status and perspective of protein crystallography at the first multi-bend achromat based synchrotron MAX IV. J Synchrotron Radiat. 2025;32:779-791. doi:10.1107/S1600577525002255</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Highly accurate protein structure prediction with AlphaFold</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jumper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pritzel</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-021-03819-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">596</biblScope>
+			<biblScope unit="issue">7873</biblScope>
+			<biblScope unit="page" from="583" to="589" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. Nature. 2021;596(7873):583-589. doi:10.1038/s41586-021-03819-2</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The molecular replacement method</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Rossmann</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0108767389009815</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect A Found Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="73" to="82" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rossmann MG. The molecular replacement method. Acta Crystallogr Sect A Found Crystal- logr. 1990;46:73-82. doi:10.1107/S0108767389009815</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Dynamics and kinetics in structural biology: unravelling function through time-resolved structural analysis</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Moffat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Lattman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>Hoboken, NJ</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Moffat K, Lattman EE. Dynamics and kinetics in structural biology: unravelling function through time-resolved structural analysis. Hoboken, NJ: John Wiley &amp; Sons; 2023.</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Macromolecular crystallography from an industrial perspective -the impact of synchrotron radiation on structure-based drug discovery</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Käck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sjögren</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S1600577524012281</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="294" to="303" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Käck H, Sjögren T. Macromolecular crystallography from an industrial perspective -the impact of synchrotron radiation on structure-based drug discovery. J Synchrotron Radiat. 2025;32:294-303. doi:10.1107/S1600577524012281</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Towards patient-relevant structures: reviewing bodytemperature biological macromolecules and their ligands for pharmaceutical applications</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Brink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Helliwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fjf</forename><surname>Jacobs</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S2059798325010617</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Crystallogr Sect D Struct Biol</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2026">2026</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brink A, Helliwell JR, Jacobs FJF. Towards patient-relevant structures: reviewing body- temperature biological macromolecules and their ligands for pharmaceutical applications. Acta Crystallogr Sect D Struct Biol. 2026;82:1-10. doi:10.1107/S2059798325010617</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Current and future perspectives for structural biology at the Grenoble EPN campus: a comprehensive overview</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Mccarthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Basu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Bernaudat</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S1600577525002012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Synchrotron Radiat</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="577" to="594" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McCarthy AA, Basu S, Bernaudat F, et al. Current and future perspectives for structural biology at the Grenoble EPN campus: a comprehensive overview. J Synchrotron Radiat. 2025;32:577-594. doi:10.1107/S1600577525002012</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

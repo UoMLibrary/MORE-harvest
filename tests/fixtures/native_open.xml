@@ -1,0 +1,3804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article article-type="brief-report" dtd-version="2.3" xml:lang="EN" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">Front. Commun. Netw.</journal-id>
+<journal-title>Frontiers in Communications and Networks</journal-title>
+<abbrev-journal-title abbrev-type="pubmed">Front. Commun. Netw.</abbrev-journal-title>
+<issn pub-type="epub">2673-530X</issn>
+<publisher>
+<publisher-name>Frontiers Media S.A.</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">1602095</article-id>
+<article-id pub-id-type="doi">10.3389/frcmn.2025.1602095</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Communications and Networks</subject>
+<subj-group>
+<subject>Perspective</subject>
+</subj-group>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>On the analytical model for jitter</article-title>
+<alt-title alt-title-type="left-running-head">Nadarajah and Ba</alt-title>
+<alt-title alt-title-type="right-running-head">
+<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3389/frcmn.2025.1602095">10.3389/frcmn.2025.1602095</ext-link>
+</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name>
+<surname>Nadarajah</surname>
+<given-names>Saralees</given-names>
+</name>
+<xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref>
+<xref ref-type="corresp" rid="c001">&#x2a;</xref>
+<uri xlink:href="https://loop.frontiersin.org/people/2700417/overview"/>
+<role content-type="https://credit.niso.org/contributor-roles/Writing - review &#x26; editing/"/>
+<role content-type="https://credit.niso.org/contributor-roles/writing-original-draft/"/>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Ba</surname>
+<given-names>Alassane</given-names>
+</name>
+<xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref>
+<role content-type="https://credit.niso.org/contributor-roles/writing-original-draft/"/>
+<role content-type="https://credit.niso.org/contributor-roles/Writing - review &#x26; editing/"/>
+</contrib>
+</contrib-group>
+<aff id="aff1">
+<sup>1</sup>
+<institution>Department of Mathematics</institution>, <institution>University of Manchester</institution>, <addr-line>Manchester</addr-line>, <country>United Kingdom</country>
+</aff>
+<aff id="aff2">
+<sup>2</sup>
+<institution>Department Mathematics and Computer</institution>, <institution>Cheikh Anta Diop University of Dakar</institution>, <addr-line>Dakar</addr-line>, <country>Senegal</country>
+</aff>
+<author-notes>
+<fn fn-type="edited-by">
+<p>
+<bold>Edited by:</bold> <ext-link ext-link-type="uri" xlink:href="https://loop.frontiersin.org/people/1986326/overview">Gangwei Wang</ext-link>, Hebei University of Economics and Business, China</p>
+</fn>
+<fn fn-type="edited-by">
+<p>
+<bold>Reviewed by:</bold> <ext-link ext-link-type="uri" xlink:href="https://loop.frontiersin.org/people/3077032/overview">Wuyunzhaola Borjigin</ext-link>, Inner Mongolia University of Finance and Economics, China</p>
+</fn>
+<corresp id="c001">&#x2a;Correspondence: Saralees Nadarajah, <email>mbbsssn2@manchester.ac.uk</email>
+</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>24</day>
+<month>07</month>
+<year>2025</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2025</year>
+</pub-date>
+<volume>6</volume>
+<elocation-id>1602095</elocation-id>
+<history>
+<date date-type="received">
+<day>01</day>
+<month>04</month>
+<year>2025</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>06</month>
+<year>2025</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>Copyright &#xa9; 2025 Nadarajah and Ba.</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder>Nadarajah and Ba</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+<p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</p>
+</license>
+</permissions>
+<abstract>
+<p>Jitter in Internet Protocol (IP) networks refers to the variation in packet arrival times, which can cause delays or disruptions in real-time communications like voice or video calls. Managing jitter is crucial for applications requiring consistent data flow, such as voice over internet protocol, online gaming, and video conferencing, to maintain quality and reliability. Dahmouni et al. derived an analytical model for jitter in an important paper cited by many authors. But some of the fundamental equations in Dahmouni et al. do not appear correct. We correct the equations and study some analytical properties of jitter. Among others, we show that jitter can be expressed as <inline-formula id="inf1">
+<mml:math id="m1">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>, where <inline-formula id="inf2">
+<mml:math id="m2">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> denotes the rate of service times, <inline-formula id="inf3">
+<mml:math id="m3">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> denotes the rate of transit times and <inline-formula id="inf4">
+<mml:math id="m4">
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> denotes the rate of inter-arrival times. We provide a Maple code to check correctness of our equations.</p>
+</abstract>
+<kwd-group>
+<kwd>integration</kwd>
+<kwd>maple</kwd>
+<kwd>singularity</kwd>
+<kwd>IP</kwd>
+<kwd>jitter</kwd>
+</kwd-group>
+<custom-meta-wrap>
+<custom-meta>
+<meta-name>section-at-acceptance</meta-name>
+<meta-value>Networks</meta-value>
+</custom-meta>
+</custom-meta-wrap>
+</article-meta>
+</front>
+<body>
+<sec id="s1">
+<title>1 Introduction</title>
+<p>According to <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref>, &#x201c;IP network planning and design is mostly based on the average delay or loss constraints which can often be easily calculated. Jitter, on the other hand, is much more difficult to evaluate, but it is particularly important to manage the QoS of realtime and interactive services such as VoIP and streaming video&#x201d;. <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref> derived an important analytical model for jitter. Their results have been so important that their paper has been cited by many authors, see, for example, (<xref ref-type="bibr" rid="B11">Ye et al., 2023</xref>; <xref ref-type="bibr" rid="B8">Masli et al., 2022</xref>; <xref ref-type="bibr" rid="B1">Chang et al., 2024</xref>; <xref ref-type="bibr" rid="B4">Dbira et al., 2016</xref>; <xref ref-type="bibr" rid="B2">Dahmouni et al., 2012b</xref>; <xref ref-type="bibr" rid="B10">Sreedevi and Rama Rao, 2020</xref>; <xref ref-type="bibr" rid="B5">El Amri and Meddeb, 2021</xref>; <xref ref-type="bibr" rid="B6">Gore et al., 2022</xref>; <xref ref-type="bibr" rid="B7">Husen et al., 2021</xref>; <xref ref-type="bibr" rid="B9">Mustapha et al., 2020</xref>).</p>
+<p>However, some of the fundamental equations (see <xref ref-type="disp-formula" rid="e8">Equations 8</xref>&#x2013;<xref ref-type="disp-formula" rid="e11">11</xref> of <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref>) derived in <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref> do not appear correct. The aim of this letter is to correct the equations. In the process, we derive an exact expression for jitter when the service times, transit times and inter-arrival times are exponentially distributed (<xref ref-type="sec" rid="s2">Section 2</xref>). We also study some analytical properties of the expression (<xref ref-type="sec" rid="s2">Section 2</xref>). The correctness of our derivation is verified by a Maple code given in <xref ref-type="sec" rid="s3">Section 3</xref>. Some conclusions are provided in <xref ref-type="sec" rid="s4">Section 4</xref>.</p>
+</sec>
+<sec id="s2">
+<title>2 Analytical derivation</title>
+<p>Let <inline-formula id="inf5">
+<mml:math id="m5">
+<mml:mrow>
+<mml:mi>S</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, <inline-formula id="inf6">
+<mml:math id="m6">
+<mml:mrow>
+<mml:mi>T</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf7">
+<mml:math id="m7">
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> denote the probability density functions of service, transit and inter-arrival times, respectively. According to <xref ref-type="disp-formula" rid="e7">Equation 7</xref> of <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref>, the most general formula for jitter is<disp-formula id="e1">
+<mml:math id="m8">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>I</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mfenced open="{" close="}">
+<mml:mrow>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>S</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mfenced open="[" close="]">
+<mml:mrow>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>T</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>i</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>T</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(1)</label>
+</disp-formula>
+</p>
+<p>
+<xref ref-type="disp-formula" rid="e9">Equations 9</xref>&#x2013;<xref ref-type="disp-formula" rid="e11">11</xref> of <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref> derive an expression for <xref ref-type="disp-formula" rid="e1">Equation 1</xref> when <inline-formula id="inf8">
+<mml:math id="m9">
+<mml:mrow>
+<mml:mi>T</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula>, <inline-formula id="inf9">
+<mml:math id="m10">
+<mml:mrow>
+<mml:mi>S</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf10">
+<mml:math id="m11">
+<mml:mrow>
+<mml:mi>I</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula>. Actually, <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref> stated the following: &#x201c;Note that this expression (referring to <xref ref-type="disp-formula" rid="e1">Equation 1</xref>) is entirely general. We now assume that the distributions are exponential, namely that<disp-formula id="equ1">
+<mml:math id="m12">
+<mml:mrow>
+<mml:mi>T</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>,</mml:mo>
+<mml:mspace width="1em"/>
+<mml:mi>S</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>,</mml:mo>
+<mml:mspace width="1em"/>
+<mml:mi>I</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+</p>
+<p>From these, we can compute <xref ref-type="disp-formula" rid="e7">Equation 7</xref> and get.<disp-formula id="e2">
+<mml:math id="m13">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>A</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>B</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(2)</label>
+</disp-formula>
+<disp-formula id="e3">
+<mml:math id="m14">
+<mml:mrow>
+<mml:mi>A</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(3)</label>
+</disp-formula>
+<disp-formula id="e4">
+<mml:math id="m15">
+<mml:mrow>
+<mml:mi>B</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(4)</label>
+</disp-formula>from which we get &#x2026;&#x201d;. The expression given by <xref ref-type="disp-formula" rid="e2">Equations 2</xref>&#x2013;<xref ref-type="disp-formula" rid="e4">4</xref> reduces to <inline-formula id="inf11">
+<mml:math id="m16">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+<p>Proposition 1 in <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref> supposes that <inline-formula id="inf12">
+<mml:math id="m17">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, corresponding to an M/M/1 queue, although there is no mention of an M/M/1 queue in <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref>. The condition <inline-formula id="inf13">
+<mml:math id="m18">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> is mentioned only in Proposition 1 and it is not clear if <inline-formula id="inf14">
+<mml:math id="m19">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> applies to any result outside of the proposition. The derivations leading to <xref ref-type="disp-formula" rid="e2">Equations 2</xref>&#x2013;<xref ref-type="disp-formula" rid="e4">4</xref> do not refer to Proposition 1 and do not appear to suppose any restriction between <inline-formula id="inf15">
+<mml:math id="m20">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, <inline-formula id="inf16">
+<mml:math id="m21">
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf17">
+<mml:math id="m22">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. Yet, <xref ref-type="disp-formula" rid="e2">Equations 2</xref>&#x2013;<xref ref-type="disp-formula" rid="e4">4</xref> reduces to <inline-formula id="inf18">
+<mml:math id="m23">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>. We now show that <inline-formula id="inf19">
+<mml:math id="m24">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula> is incorrect unless <inline-formula id="inf20">
+<mml:math id="m25">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+<p>The reminder of this section gives an exact expression for <xref ref-type="disp-formula" rid="e1">Equation 1</xref> and studies its analytical properties when <inline-formula id="inf21">
+<mml:math id="m26">
+<mml:mrow>
+<mml:mi>T</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula>, <inline-formula id="inf22">
+<mml:math id="m27">
+<mml:mrow>
+<mml:mi>S</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf23">
+<mml:math id="m28">
+<mml:mrow>
+<mml:mi>I</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:math>
+</inline-formula>. Note that we can write<disp-formula id="e5">
+<mml:math id="m29">
+<mml:mrow>
+<mml:mtable class="eqnarray">
+<mml:mtr>
+<mml:mtd columnalign="right">
+<mml:mi>J</mml:mi>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:mo>&#x3d;</mml:mo>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>I</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>S</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>T</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>I</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>S</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>i</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>T</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left">
+<mml:mo>&#x3d;</mml:mo>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>i</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left">
+<mml:mo>&#x3d;</mml:mo>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>i</mml:mi>
+<mml:mo stretchy="false">&#x2223;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left">
+<mml:mo>&#x3d;</mml:mo>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>x</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>x</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left"/>
+<mml:mtd columnalign="left">
+<mml:mspace width="2em"/>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msubsup>
+<mml:mrow>
+<mml:mo>&#x222b;</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msubsup>
+<mml:mo>&#x2061;</mml:mo>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>s</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>s</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>exp</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>d</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>d</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:mtd>
+</mml:mtr>
+<mml:mtr>
+<mml:mtd columnalign="right"/>
+<mml:mtd columnalign="left">
+<mml:mo>&#x3d;</mml:mo>
+</mml:mtd>
+<mml:mtd columnalign="left">
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>5</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>,</mml:mo>
+</mml:mtd>
+</mml:mtr>
+</mml:mtable>
+</mml:mrow>
+</mml:math>
+<label>(5)</label>
+</disp-formula>say. Some simple calculations show that<disp-formula id="e6">
+<mml:math id="m30">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>3</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>3</mml:mn>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(6)</label>
+</disp-formula>
+<disp-formula id="e7">
+<mml:math id="m31">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>3</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>3</mml:mn>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(7)</label>
+</disp-formula>
+<disp-formula id="e8">
+<mml:math id="m32">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(8)</label>
+</disp-formula>
+<disp-formula id="e9">
+<mml:math id="m33">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+<label>(9)</label>
+</disp-formula>and<disp-formula id="e10">
+<mml:math id="m34">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>I</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>5</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(10)</label>
+</disp-formula>
+</p>
+<p>Substituting <xref ref-type="disp-formula" rid="e6">Equations 6</xref>&#x2013;<xref ref-type="disp-formula" rid="e10">10</xref> into <xref ref-type="disp-formula" rid="e5">Equation 5</xref> and simplifying, we obtain<disp-formula id="e11">
+<mml:math id="m35">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(11)</label>
+</disp-formula>
+</p>
+<p>If <inline-formula id="inf24">
+<mml:math id="m36">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, corresponding to an M/M/1 queue, then <xref ref-type="disp-formula" rid="e11">Equation 11</xref> reduces to <inline-formula id="inf25">
+<mml:math id="m37">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>, the expression given in <xref ref-type="bibr" rid="B3">Dahmouni et al. (2012a)</xref>. <xref ref-type="disp-formula" rid="e11">Equation 11</xref> can be useful for general queues not just an M/M/1 queue.</p>
+<p>Some properties of <xref ref-type="disp-formula" rid="e11">Equation 11</xref> are<disp-formula id="equ2">
+<mml:math id="m38">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+<disp-formula id="equ3">
+<mml:math id="m39">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+<disp-formula id="equ4">
+<mml:math id="m40">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+<disp-formula id="equ5">
+<mml:math id="m41">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+<disp-formula id="equ6">
+<mml:math id="m42">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bb;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</disp-formula>and<disp-formula id="equ7">
+<mml:math id="m43">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+</p>
+<p>Let <inline-formula id="inf26">
+<mml:math id="m44">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x3b7;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bb;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. We can then write <xref ref-type="disp-formula" rid="e11">Equation 11</xref> as<disp-formula id="e12">
+<mml:math id="m45">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(12)</label>
+</disp-formula>
+</p>
+<p>Note that<disp-formula id="equ8">
+<mml:math id="m46">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</disp-formula>and<disp-formula id="equ9">
+<mml:math id="m47">
+<mml:mrow>
+<mml:msub>
+<mml:mrow>
+<mml:mi>lim</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x2192;</mml:mo>
+<mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:msub>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mi>&#x221e;</mml:mi>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+</p>
+<p>The partial derivatives of <xref ref-type="disp-formula" rid="e12">Equation 12</xref> with respect to <inline-formula id="inf27">
+<mml:math id="m48">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf28">
+<mml:math id="m49">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> are<disp-formula id="e13">
+<mml:math id="m50">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:mi>a</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(13)</label>
+</disp-formula>
+<disp-formula id="e14">
+<mml:math id="m51">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:mi>a</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+<label>(14)</label>
+</disp-formula>
+<disp-formula id="equ10">
+<mml:math id="m52">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>6</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>6</mml:mn>
+<mml:mi>a</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+<disp-formula id="equ11">
+<mml:math id="m53">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>6</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>6</mml:mn>
+<mml:mi>a</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>2</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</disp-formula>and<disp-formula id="equ12">
+<mml:math id="m54">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>a</mml:mi>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+</p>
+<p>Moreover,<disp-formula id="equ13">
+<mml:math id="m55">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>&#x2212;</mml:mo>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mfrac>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mi>J</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>a</mml:mi>
+<mml:mi>&#x2202;</mml:mi>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>6</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>36</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>96</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>36</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>4</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mn>4</mml:mn>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>6</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+<mml:mo>&#x2b;</mml:mo>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:mfenced>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>6</mml:mn>
+</mml:mrow>
+</mml:msup>
+<mml:msup>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mrow>
+<mml:mn>3</mml:mn>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</disp-formula>
+</p>
+<p>Setting (<xref ref-type="disp-formula" rid="e13">Equation 13</xref>) to zero, we obtain <inline-formula id="inf29">
+<mml:math id="m56">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. Setting (<xref ref-type="disp-formula" rid="e14">Equation 14</xref>) to zero, we obtain <inline-formula id="inf30">
+<mml:math id="m57">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+<p>Plots of the jitter in <xref ref-type="disp-formula" rid="e12">Equation 12</xref> versus <inline-formula id="inf31">
+<mml:math id="m58">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf32">
+<mml:math id="m59">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> are shown in <xref ref-type="fig" rid="F1">Figures 1</xref>, <xref ref-type="fig" rid="F2">2</xref>. We see that jitter is a decreasing function of <inline-formula id="inf33">
+<mml:math id="m60">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> for <inline-formula id="inf34">
+<mml:math id="m61">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3c;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, an increasing function of <inline-formula id="inf35">
+<mml:math id="m62">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> for <inline-formula id="inf36">
+<mml:math id="m63">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3e;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and reaches a minimum with respect to <inline-formula id="inf37">
+<mml:math id="m64">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> when <inline-formula id="inf38">
+<mml:math id="m65">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. The minimum of jitter at <inline-formula id="inf39">
+<mml:math id="m66">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> is <inline-formula id="inf40">
+<mml:math id="m67">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:mn>1</mml:mn>
+<mml:mo>&#x2b;</mml:mo>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>, which is a decreasing function of <inline-formula id="inf41">
+<mml:math id="m68">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. We also see that jitter is a decreasing function of <inline-formula id="inf42">
+<mml:math id="m69">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> for <inline-formula id="inf43">
+<mml:math id="m70">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3c;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>, an increasing function of <inline-formula id="inf44">
+<mml:math id="m71">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> for <inline-formula id="inf45">
+<mml:math id="m72">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3e;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and reaches a minimum with respect to <inline-formula id="inf46">
+<mml:math id="m73">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> when <inline-formula id="inf47">
+<mml:math id="m74">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. The minimum of jitter at <inline-formula id="inf48">
+<mml:math id="m75">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfenced open="(" close=")">
+<mml:mrow>
+<mml:msqrt>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+</mml:msqrt>
+<mml:mo>&#x2212;</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+</mml:mfenced>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> is <inline-formula id="inf49">
+<mml:math id="m76">
+<mml:mrow>
+<mml:mi>J</mml:mi>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:mfrac>
+</mml:mrow>
+</mml:math>
+</inline-formula>, which is a decreasing function of <inline-formula id="inf50">
+<mml:math id="m77">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>. Further, there is a singularity at <inline-formula id="inf51">
+<mml:math id="m78">
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mi>a</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+<mml:mo>&#x3d;</mml:mo>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mrow>
+<mml:mn>0,0</mml:mn>
+</mml:mrow>
+<mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+<fig id="F1" position="float">
+<label>FIGURE 1</label>
+<caption>
+<p>Plot of <xref ref-type="disp-formula" rid="e12">Equation 12</xref> versus <inline-formula id="inf52">
+<mml:math id="m79">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf53">
+<mml:math id="m80">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+</caption>
+<graphic xlink:href="frcmn-06-1602095-g001.tif">
+<alt-text content-type="machine-generated">Three-dimensional surface plot with axes labeled \( \mu \), \( a \), and \( J \). The colored gradient transitions from red at the bottom left to green at the top right. The surface has a curved shape with a prominent peak near the center.</alt-text>
+</graphic>
+</fig>
+<fig id="F2" position="float">
+<label>FIGURE 2</label>
+<caption>
+<p>Contours of <xref ref-type="disp-formula" rid="e12">Equation 12</xref> versus <inline-formula id="inf54">
+<mml:math id="m81">
+<mml:mrow>
+<mml:mi>a</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula> and <inline-formula id="inf55">
+<mml:math id="m82">
+<mml:mrow>
+<mml:mi>&#x3bc;</mml:mi>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+</caption>
+<graphic xlink:href="frcmn-06-1602095-g002.tif">
+<alt-text content-type="machine-generated">Graph depicting a series of red curves representing levels of the function with respect to variables \(a\) and \(\mu\). The horizontal axis is labeled \(a\) ranging from 0 to 10, and the vertical axis is labeled \(\mu\) ranging from 0 to 10. The curves are densely packed near the origin and become more spaced as \(a\) increases.</alt-text>
+</graphic>
+</fig>
+</sec>
+<sec id="s3">
+<title>3 Derivation using maple</title>
+<p>The execution of the following code in Maple gives the same answer as in <xref ref-type="disp-formula" rid="e11">Equation 11</xref>.</p>
+<p>
+<monospace>assume(mu&#x3e;0);</monospace>
+</p>
+<p>
+<monospace>assume(lambda&#x3e;0);</monospace>
+</p>
+<p>
+<monospace>assume(eta&#x3e;0);</monospace>
+</p>
+<p>
+<monospace>t1:&#x3d;int(mu&#x2a;exp(-mu&#x2a;s)&#x2a;abs(s-y)&#x2a;exp(-eta&#x2a;y), s &#x3d; 0 &#x2026; infinity);</monospace>
+</p>
+<p>
+<monospace>tt1:&#x3d;int(t1&#x2a;lambda&#x2a;exp(-lambda&#x2a;y), y &#x3d; 0 &#x2026; infinity);</monospace>
+</p>
+<p>
+<monospace>t2:&#x3d;int(abs(s-x)&#x2a;eta&#x2a;exp(-eta&#x2a;x), x &#x3d; 0 &#x2026; y);</monospace>
+</p>
+<p>
+<monospace>t3:&#x3d;int(mu&#x2a;exp(-mu&#x2a;s)&#x2a;t2, s &#x3d; 0 &#x2026; infinity);</monospace>
+</p>
+<p>
+<monospace>t4:&#x3d;int(lambda&#x2a;exp(-lambda&#x2a;y)&#x2a;t3, y &#x3d; 0 &#x2026; infinity);</monospace>
+</p>
+<p>
+<monospace>final:&#x3d;simplify(t4&#x2b;tt1);</monospace>
+</p>
+</sec>
+<sec sec-type="conclusion" id="s4">
+<title>4 Conclusion</title>
+<p>We have derived an exact expression for jitter when the service times, transit times and inter-arrival times are exponentially distributed. The correctness of this expression has been checked by a Maple code.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability" id="s5">
+<title>Data availability statement</title>
+<p>The original contributions presented in the study are included in the article/supplementary material, further inquiries can be directed to the corresponding author.</p>
+</sec>
+<sec sec-type="author-contributions" id="s6">
+<title>Author contributions</title>
+<p>SN: Writing &#x2013; review and editing, Writing &#x2013; original draft. AB: Writing &#x2013; original draft, Writing &#x2013; review and editing.</p>
+</sec>
+<sec sec-type="funding-information" id="s7">
+<title>Funding</title>
+<p>The author(s) declare that no financial support was received for the research and/or publication of this article.</p>
+</sec>
+<ack>
+<p>Both authors would like to thank the referee and the editor for careful reading and comments which greatly improved the paper.</p>
+</ack>
+<sec sec-type="COI-statement" id="s8">
+<title>Conflict of interest</title>
+<p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</sec>
+<sec sec-type="ai-statement" id="s9">
+<title>Generative AI statement</title>
+<p>The author(s) declare that no Generative AI was used in the creation of this manuscript.</p>
+</sec>
+<sec sec-type="disclaimer" id="s10">
+<title>Publisher&#x2019;s note</title>
+<p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="B1">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Chang</surname>
+<given-names>S.</given-names>
+</name>
+<name>
+<surname>Wu</surname>
+<given-names>S.</given-names>
+</name>
+<name>
+<surname>Huang</surname>
+<given-names>N.</given-names>
+</name>
+<name>
+<surname>Zhang</surname>
+<given-names>Y. Y.</given-names>
+</name>
+<name>
+<surname>Zhu</surname>
+<given-names>Y. J.</given-names>
+</name>
+<name>
+<surname>Wang</surname>
+<given-names>C.</given-names>
+</name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Delay jitter analysis for VLC under indoor industrial internet of things scenarios</article-title>. <source>IEEE Photonics J.</source> <volume>16</volume>, <fpage>1</fpage>&#x2013;<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1109/jphot.2024.3456115</pub-id>
+</citation>
+</ref>
+<ref id="B2">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Dahmouni</surname>
+<given-names>H.</given-names>
+</name>
+<name>
+<surname>Girard</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Ouzineb</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Sanso</surname>
+<given-names>B.</given-names>
+</name>
+</person-group> (<year>2012b</year>). <article-title>The impact of jitter on traffic flow optimization in communication networks</article-title>. <source>IEEE Trans. Netw. Serv. Manag.</source> <volume>9</volume>, <fpage>279</fpage>&#x2013;<lpage>292</lpage>. <pub-id pub-id-type="doi">10.1109/tnsm.2012.051712.110148</pub-id>
+</citation>
+</ref>
+<ref id="B3">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Dahmouni</surname>
+<given-names>H.</given-names>
+</name>
+<name>
+<surname>Girard</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Sanso</surname>
+<given-names>B.</given-names>
+</name>
+</person-group> (<year>2012a</year>). <article-title>An analytical model for jitter in IP networks</article-title>. <source>Ann. Telecommun.</source> <volume>67</volume>, <fpage>81</fpage>&#x2013;<lpage>90</lpage>. <pub-id pub-id-type="doi">10.1007/s12243-011-0254-y</pub-id>
+</citation>
+</ref>
+<ref id="B4">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Dbira</surname>
+<given-names>H.</given-names>
+</name>
+<name>
+<surname>Girard</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Sanso</surname>
+<given-names>B.</given-names>
+</name>
+</person-group> (<year>2016</year>). <article-title>Calculation of packet jitter for non-poisson traffic</article-title>. <source>Ann. Telecommun.</source> <volume>71</volume>, <fpage>223</fpage>&#x2013;<lpage>237</lpage>. <pub-id pub-id-type="doi">10.1007/s12243-016-0492-0</pub-id>
+</citation>
+</ref>
+<ref id="B5">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>El Amri</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Meddeb</surname>
+<given-names>A.</given-names>
+</name>
+</person-group> (<year>2021</year>). <article-title>Optimal server selection for competitive service providers in network virtualization context</article-title>. <source>Telecommun. Syst.</source> <volume>77</volume>, <fpage>451</fpage>&#x2013;<lpage>467</lpage>. <pub-id pub-id-type="doi">10.1007/s11235-021-00764-3</pub-id>
+</citation>
+</ref>
+<ref id="B6">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Gore</surname>
+<given-names>R. N.</given-names>
+</name>
+<name>
+<surname>Lisova</surname>
+<given-names>E.</given-names>
+</name>
+<name>
+<surname>&#xc5;kerberg</surname>
+<given-names>J.</given-names>
+</name>
+<name>
+<surname>Bjorkman</surname>
+<given-names>M.</given-names>
+</name>
+</person-group> (<year>2022</year>). <article-title>Network calculus approach for packet delay variation analysis of multi-hop wired networks</article-title>. <source>Appl. Sci.</source> <volume>12</volume>, <fpage>11207</fpage>. <comment>article id 11207</comment>. <pub-id pub-id-type="doi">10.3390/app122111207</pub-id>
+</citation>
+</ref>
+<ref id="B7">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Husen</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Chaudary</surname>
+<given-names>M. H.</given-names>
+</name>
+<name>
+<surname>Ahmad</surname>
+<given-names>F.</given-names>
+</name>
+<name>
+<surname>Alam</surname>
+<given-names>M. I.</given-names>
+</name>
+<name>
+<surname>Sohail</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Asif</surname>
+<given-names>M.</given-names>
+</name>
+</person-group> (<year>2021</year>). <article-title>Improving scheduling performance in congested networks</article-title>. <source>PeerJ Comput. Sci.</source> <volume>7</volume>, <fpage>e754</fpage>. <comment>article id e754</comment>. <pub-id pub-id-type="doi">10.7717/peerj-cs.754</pub-id>
+</citation>
+</ref>
+<ref id="B8">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Masli</surname>
+<given-names>A. A.</given-names>
+</name>
+<name>
+<surname>Ahmed</surname>
+<given-names>F. Y. H.</given-names>
+</name>
+<name>
+<surname>Mansoor</surname>
+<given-names>A. M.</given-names>
+</name>
+</person-group> (<year>2022</year>). <article-title>QoS-Aware scheduling algorithm enabling video services in LTE networks</article-title>. <source>Computers</source> <volume>11</volume>, <fpage>77</fpage>. <comment>article id 77</comment>. <pub-id pub-id-type="doi">10.3390/computers11050077</pub-id>
+</citation>
+</ref>
+<ref id="B9">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Mustapha</surname>
+<given-names>O. Z.</given-names>
+</name>
+<name>
+<surname>Hu</surname>
+<given-names>Y. F.</given-names>
+</name>
+<name>
+<surname>Sheriff</surname>
+<given-names>R.</given-names>
+</name>
+<name>
+<surname>Abd-Alhameed</surname>
+<given-names>R. A.</given-names>
+</name>
+<name>
+<surname>Ali</surname>
+<given-names>M.</given-names>
+</name>
+</person-group> (<year>2020</year>). <article-title>Evaluation of bandwidth resource allocation using dynamic LSP and LDP in MPLS for wireless networks</article-title>. <source>Int. J. Comput. Digital Syst.</source> <volume>9</volume>, <fpage>147</fpage>&#x2013;<lpage>158</lpage>.</citation>
+</ref>
+<ref id="B10">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Sreedevi</surname>
+<given-names>A. G.</given-names>
+</name>
+<name>
+<surname>Rama Rao</surname>
+<given-names>T.</given-names>
+</name>
+</person-group> (<year>2020</year>). <article-title>SINR based association algorithm for indoor device-to-device communication networks</article-title>. <source>Peer-to-Peer Netw. Appl.</source> <volume>13</volume>, <fpage>1921</fpage>&#x2013;<lpage>1930</lpage>. <pub-id pub-id-type="doi">10.1007/s12083-020-00951-0</pub-id>
+</citation>
+</ref>
+<ref id="B11">
+<citation citation-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Ye</surname>
+<given-names>Z.</given-names>
+</name>
+<name>
+<surname>Gang</surname>
+<given-names>S.</given-names>
+</name>
+<name>
+<surname>Guizani</surname>
+<given-names>M.</given-names>
+</name>
+</person-group> (<year>2023</year>). <article-title>ILBPS: an integrated optimization approach based on adaptive load-balancing and heuristic path selection in SDN</article-title>. <source>IEEE Internet Things J.</source> <volume>11</volume>, <fpage>6144</fpage>&#x2013;<lpage>6157</lpage>.</citation>
+</ref>
+</ref-list>
+</back>
+</article>
