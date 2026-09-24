@@ -46,9 +46,9 @@ def main():
         print("    Green verdicts in this mode prove LESS than they appear to.")
 
     print("\nWhat you can run without an API key")
-    print("  python tests/crosswalk_pilot.py    Lane C, seven publisher fixtures, offline")
-    print("  python tests/test_routing.py       the routing policy (needs a works DB)")
-    print("  python -m routing --explain        the routing policy as a decision table")
+    print("  uv run python tests/crosswalk_pilot.py    Lane C, seven publisher fixtures, offline")
+    print("  uv run python tests/test_routing.py       the routing policy (needs a works DB)")
+    print("  uv run python -m routing --explain        the routing policy as a decision table")
 
     sample = [os.path.join(r, f)
               for r, _, fs in os.walk(os.path.join(HERE, "harvest"))
@@ -57,7 +57,7 @@ def main():
     if sample:
         year = os.path.basename(os.path.dirname(sample[0])).replace("works_", "")
         print(f"  {len(sample)} harvested page(s) present — build the DB with:")
-        print(f"    python harvest_openalex.py build-db --year {year}")
+        print(f"    uv run python harvest_openalex.py build-db --year {year}")
     else:
         print("  none — harvesting needs an OpenAlex key (see README)")
 
