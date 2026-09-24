@@ -1,0 +1,69 @@
+# MORE-harvest (Workstation B): harvest workstation for CC-BY versions of record.
+#
+# This is a virtual project ([tool.uv] package = false): nothing here is built or
+# installed as a distribution. The repository is a collection of scripts that share
+# one locked interpreter and dependency set, so `uv run` and `uv sync` install only
+# the dependencies below. This mirrors Workstation A (`lane_a/`), which is managed
+# the same way.
+#
+# System tools also required (not managed by uv):
+#   - `xmllint`: DTD validation tier (see doctor.py)
+#   - `gs` (Ghostscript): optional EPS-to-PNG conversion for arXiv figures
+#     (see fetch_figures.py)
+
+[project]
+name = "more-harvest"
+version = "0.1.0"
+description = "Harvest workstation (Workstation B): CC-BY version-of-record acquisition and conversion to house JATS for MORE."
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb==1.5.5",  # router/tracker index (harvest_openalex, ingest_log, ingest_one, fetch_*, tei_pilot, tests/test_routing)
+    "lxml==6.1.1",  # every XML transform (lanec/*) plus fetch_figures, latex_caption_clean, repair_repo_pdf_figs, tests
+    "pymupdf==1.27.2.3",  # PDF text for the Lane-B fidelity gate (ingest_one, lanec/pdf_fidelity)
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.3",
+    "pytest-cov==7.1.0",
+    "pytest-timeout==2.4.0",
+    "ruff==0.4.10",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+preview = true
+explicit-preview-rules = true
+select = ["C901", "E301", "E302", "E303", "E402", "F401"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+# Ratchet: each entry records pre-existing violations and is removed by the change
+# that refactors that file. The two vendor/ entries are the exception: those files
+# are owned by Workstation A (see vendor/SOURCE.md) and stay ignored until a vendor
+# resync fixes them upstream.
+[tool.ruff.lint.per-file-ignores]
+"fetch_figures.py" = ["C901"]
+"fetch_router.py" = ["C901"]
+"fetch_tei.py" = ["C901"]
+"fetch_vor_pdfs.py" = ["C901", "F401"]
+"fidelity_calibrate.py" = ["C901"]
+"harvest_openalex.py" = ["C901"]
+"ingest_batch.py" = ["C901"]
+"ingest_one.py" = ["C901", "F401"]
+"lanec/crosswalk_generic.py" = ["C901", "F401"]
+"lanec/elsevier_to_jats.py" = ["C901", "F401"]
+"lanec/latex_body_clean.py" = ["C901"]
+"lanec/pdf_fidelity.py" = ["C901"]
+"lanec/publisher_rules.py" = ["F401"]
+"lanec/tei_to_jats.py" = ["C901"]
+"repair_repo_pdf_figs.py" = ["C901"]
+"tei_pilot.py" = ["C901"]
+"vendor/scripts/jats_house_lint.py" = ["C901", "E302"]
+"vendor/scripts/validate_jats.py" = ["C901"]
