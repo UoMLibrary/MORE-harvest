@@ -20,7 +20,10 @@ maintenance smell — and it clashes with the standing principle: *scripts over 
 
 ## The two agents (by kind of judgement)
 
-Both live in `MORE-harvest/.claude/agents/` (Opus, per the workspace discipline):
+Both will live in `deploy/roles/` in MORE-harvest (Opus, per the workspace discipline),
+vendor-neutral sources generated per vendor into the gitignored vendor directories.
+Until canonical roles are created, the working copies are the gitignored
+`.claude/agents/` files, which are generated output, not the source:
 
 - **`ingest-operator`** — drives the deterministic ingest routes. Its world-model is the [work-tracker](The%20Production%20Pipeline/The%20DuckDB%20Lane%20Router.md): it reads the do-next queue, kicks a batch, and **triages the
   tail** — classifying each non-clean outcome as *partial* (physics figures short, the known
@@ -38,8 +41,11 @@ Both live in `MORE-harvest/.claude/agents/` (Opus, per the workspace discipline)
   and *wield the scripts* — they don't restate route knowledge that would drift.
 - **The tracker is the operator's memory.** The [worklist DB](The%20Production%20Pipeline/The%20DuckDB%20Lane%20Router.md) is exactly
   the state an ops agent needs to decide what to run and what needs a human.
-- **One-way boundary, absolute.** They *call* the workstation's gate scripts (as the ingest
-  scripts already do) but never write into or import from it — and never learn the *consumers* exist.
+- **Workstation A boundary.** They *call* Workstation A's scripts (as the ingest
+  scripts already do), and may import the functions listed in `AGENTS.md` through
+  `lane_a_bridge.py` — the pinned `lane_a/` submodule plus a contract test per
+  function keep this safe. They never write into Workstation A — and never learn
+  the *consumers* exist.
 
 > [!note] The right frame
 > The routes don't want an agent — that they *don't* need one per paper is the win. Agents sit

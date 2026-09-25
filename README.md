@@ -1,18 +1,17 @@
-# MORE harvest — pipeline review snapshot
+# MORE-harvest — Workstation B (harvest workstation)
 
-**This is a snapshot for review, not a live repo.** It was generated on
-2026-09-02 from the MORE workspace at commit `1bdf600`
-by `make_review_repo.py`, which copies an explicit allow-list of files out of the
-working `MORE-harvest` folder. It is a build artefact: **don't edit it, and don't
-expect it to stay in sync.** Findings come back to the author, who changes the live
-folder and regenerates this.
+This is the maintained source of the harvest workstation. It acquires
+already-published **CC-BY Version-of-Record** articles from open sources and
+manufactures **house JATS packages** from them — the same package shape a human
+cataloguer produces from an Author Accepted Manuscript, but at a fraction of the
+effort, because the publisher already did the structuring. It covers **Lanes B,
+C and C′**; anything not CC-BY is out of scope here.
 
-## What this code does
-
-It acquires already-published **CC-BY Version-of-Record** articles from open
-sources and manufactures **house JATS packages** from them — the same package shape
-a human cataloguer produces from an Author Accepted Manuscript, but at a fraction of
-the effort, because the publisher already did the structuring.
+**Workstation A** (`aam-to-jatsxml`, a separate private repo) is the AAM
+cataloguing workstation. It handles **Lane A** — rights-driven conversion of
+author accepted manuscripts — and owns the shared quality gates both producers
+are judged by. It joins this repo as the `lane_a/` submodule; until then the
+gates live in `vendor/`, which will be replaced by `lane_a/`.
 
 A package is one folder per work:
 
@@ -36,7 +35,7 @@ judgement is the most consequential thing in the pipeline and it lives on its ow
 reasoning attached to each arm:
 
 ```bash
-python -m routing --explain
+uv run python -m routing --explain
 ```
 
 **3. Get the XML where it exists, and crosswalk it.** Where the publisher already
@@ -54,16 +53,16 @@ whose thresholds were calibrated rather than guessed (`fidelity_calibrate.py`). 
 fidelity FAIL never ships clean.
 
 True PDF-only conversion — with no TEI to lean on — is **not built**. That is the
-honest gap in the pipeline, not an omission from this snapshot.
+honest gap in the pipeline.
 
 Whatever the lane, every package passes the same three gates: `validate_jats`,
 `jats_house_lint` and a licence check, run and fingerprinted by `gates_run.py`.
 
-## Start here
+## Quick start
 
 ```bash
-pip install -r requirements.txt
-python doctor.py
+uv sync
+uv run python doctor.py
 ```
 
 `doctor.py` reports which of the degraded modes you are in — in particular whether
@@ -73,20 +72,22 @@ a green verdict that means something and one that doesn't.
 Then, with no key and no network:
 
 ```bash
-python tests/crosswalk_pilot.py     # Lane C: seven real publisher XMLs through the chain
-python -m routing --explain         # the routing policy as a decision table
+uv run python tests/crosswalk_pilot.py  # Lane C: seven real publisher XMLs through the chain
+uv run python -m routing --explain      # the routing policy as a decision table
 ```
 
 A small sample of real OpenAlex metadata (36 works, several per route,
 CC0) ships as a harvested page, so the router can be exercised for real:
 
 ```bash
-python harvest_openalex.py build-db --year 2025
-python tests/test_routing.py
+uv run python harvest_openalex.py build-db --year 2025
+uv run python tests/test_routing.py
 ```
 
 Everything beyond that — actually fetching XML or PDFs — needs an OpenAlex Member+
-key, which is institutional and not included.
+key, which is institutional and not included. Keys are read from the environment
+(e.g. `OPENALEX_API_KEY`) or from the root key files, and are never committed
+(see `.gitignore`).
 
 ## Reading order
 
@@ -97,27 +98,33 @@ key, which is institutional and not included.
 5. `CHANGELOG.md` — the change discipline, which is unusual and load-bearing
 6. `docs/harvest-lab/` — the same model explained for a non-programmer
 
-## What was deliberately left out
+## Not in this repository
 
-This snapshot is the pipeline spine only (27 Python files). The live folder also
-contains the operational estate that runs it day to day — a worklist read-view, a
-standing re-lint sweep, a physical-integrity auditor, an append-only health ledger,
-targeted repair scripts for named defect classes, and a commissioning seam that
-takes DOI lists from a separate console app. None of it is imported by the code
-here, and none of it is what you were asked to look at.
+The pipeline spine lives here; the operational estate that runs it day to day
+does not:
 
-Also left out: the AAM cataloguing workstation (a separate repo), the
-rights-restricted manuscript corpus, ~6 GB of harvested packages and DuckDB
-indexes, and the API keys.
+- `worklist.py` — the operational read-view (route × status matrix, do-next queue)
+- `regate.py`, `rebuild_scan.py` — re-judging finished packages under today's gates
+  and listing which packages a fix affects
+- `corpus_fsck.py` — the physical-integrity auditor for the built corpus
+- `audit_ledger.py` — the append-only health ledger behind the corpus-health strip
+- `intake_resolve.py`, `intake_watch.py` — the intake seam that takes DOI lists
+  from the Platform console
+- `render_article.py` — the article renderer
+- `interrogate_pdfs.py` — the publisher-typesetting profiler that seeds the Lane-B
+  rule cards
+- `pmc_twin.py` — the PMC twin checker for ingest candidates and benchmark gold
+- The Platform / Workbench — the staff console and its corpus views
+
+None of it is imported by the code here. Also not here: the rights-restricted
+manuscript corpus, ~6 GB of harvested packages and DuckDB indexes, and the API keys.
 
 ## Known gaps, stated up front
 
-- **Lane B is half built.** TEI-plus-PDF works and is in production; PDF-only does not exist.
-- **Figures on Lane B are an attended step.** Physics collaboration figures have no
-  clean automated source, and the pipeline is designed to mark those `partial`
-  rather than pretend. The workstation's PDF figure-extraction fallback is not
-  vendored here, so that path degrades to `partial` in this checkout by design.
-- **ANZSRC codes are provisional.** Division-level, assigned from the OpenAlex
-  topic, flagged for cataloguer review. Never presented as final.
-- **Licence is verified per work.** The router only assigns a route to `cc-by`;
-  an institution's own VoRs are frequently NC-ND, which is exactly why.
+- **Lane B without TEI is not built.** TEI-plus-PDF works; PDF-only does not exist.
+- **`scoap3_other` has no converter.** SCOAP3 journals depositing a foreign DTD
+  need a written-once transform that does not exist yet.
+- **A Springer A++ converter is still to do.**
+- **Publisher figures are only available for PMC, PLOS and SCOAP3-via-arXiv.**
+  Other routes mark figure-short packages `partial` rather than pretend.
+- **Lane B's element-citation structuring is still to do.**

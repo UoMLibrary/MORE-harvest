@@ -10,8 +10,10 @@ updated: 2026-07-04
 > [!info] In a line
 > The original mission: convert an author's accepted manuscript into JATS under Manchester's Rights Retention Policy — because otherwise the work is locked behind a paywall and *nobody else will ever make it open*.
 
-This is the workstation you already have, unchanged. It exists in its own repository and its own
-*vault*; this lab does not touch it.
+This is the workstation you already have, unchanged. It lives in its own repository
+(`aam-to-jatsxml`), keeps its own *vault*, and is included in the harvest
+workstation as the `lane_a/` submodule — which is also where the shared gates
+that judge every package come from.
 
 ## Why it's special
 

@@ -163,8 +163,8 @@ this lab.
 
 ## One important guardrail
 
-The lab holds an OpenAlex API key in `openalex_key.txt`. Since 2026-07-09 the lab's *source code*
-is tracked by the workspace-root repository, but the key file — like all data and build folders —
+The lab holds an OpenAlex API key in `openalex_key.txt`. The lab's *source code* is
+tracked by this repository, but the key file — like all data and build folders —
 is git-ignored and must never be committed, pasted into chat, or shared.
 
 ---
