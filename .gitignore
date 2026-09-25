@@ -50,6 +50,9 @@ __pycache__/
 htmlcov/
 coverage.xml
 
+# tei_pilot - files used for calibration of Workstation B
+tei_pilot/
+
 # The uv-managed environment — provisioned per machine, never committed.
 # NOTE: uv.lock itself IS committed and must stay that way.
 .venv/
